@@ -8,21 +8,11 @@
 
 <form id="rope-form">
   <input type="text" id="rope-input">
-  <button type="submit">Submit</button>
+  <input  type="submit"></input >
 </form>
 
 <div id="output"></div>
 
-    <script>
-		 document.getElementById("rope-form").addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    let input = document.getElementById("rope-input").value;
-    let minCost = findMinCost(input);
-
-    document.getElementById("output").innerHTML = minCost;
-  });
-	</script>
 </body>
 
 </html>

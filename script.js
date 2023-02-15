@@ -1,4 +1,12 @@
 //your code here
+ document.getElementById("rope-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let input = document.getElementById("rope-input").value;
+    let minCost = findMinCost(input);
+
+    document.getElementById("output").innerHTML = minCost;
+  });
 function findMinCost(input) {
   // Split the input string into an array of rope lengths
   let ropeLengths = input.split(',').map(function(length) {
